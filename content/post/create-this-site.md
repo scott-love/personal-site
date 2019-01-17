@@ -84,3 +84,17 @@ git add .
 git commit -m "build website"
 git push -u origin master
 ```
+
+## Adding content:
+OK, the website is built it's time to add content. You can make additions/changes to your website and check out the results before deploying to your actual site.
+
+A good place to start is the config.toml file in the main directory of your site.
+It contains a bunch of key-value pairs. change the title value to the title of your website, e.g., your name. Then run Hugo server to create the HTML for the site.
+```
+hugo server
+```
+View the local copy of the built site in your browser (http://localhost:1313/).
+Leave the server running and any other changes you make will be automatically visible in local site just created. Go through all the key-value pairs and change, edit or remove any that you want.
+
+## Github version control:
+The [Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages) page from Hugo outlines a nice way to store all the files of your site on GitHub.
