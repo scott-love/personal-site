@@ -150,6 +150,8 @@ It contains a bunch of key-value pairs. change the title value to the title of y
 &lt;p&gt;View the local copy of the built site in your browser (&lt;a href=&#34;http://localhost:1313/&#34; target=&#34;_blank&#34;&gt;http://localhost:1313/&lt;/a&gt;).
 Leave the server running and any other changes you make will be automatically visible in local site just created. Go through all the key-value pairs and change, edit or remove any that you want.&lt;/p&gt;
 
+&lt;p&gt;TEST&lt;/p&gt;
+
 &lt;h2 id=&#34;github-version-control&#34;&gt;Github version control:&lt;/h2&gt;
 
 &lt;p&gt;The &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34; target=&#34;_blank&#34;&gt;Host on GitHub&lt;/a&gt; page from Hugo outlines a nice way to store all the files of your site on GitHub.&lt;/p&gt;
