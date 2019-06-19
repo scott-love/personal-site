@@ -123,4 +123,4 @@ git submodule add https://github.com/<USERNAME>/<USERNAME>.github.io.git public
 The contents of deploy.sh can be seen [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages)
 
 ## Update academic-kickstart version:
-I have found updating the academic-kickstart version and subsequently the website to be very complicated!
+I have found updating the academic-kickstart version and subsequently the website to be very complicated! I succeeded once following the instructions [here](https://sourcethemes.com/academic/docs/update/) but the second time I tried I failed. 
