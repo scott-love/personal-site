@@ -109,8 +109,18 @@ git rm -r public
 At this point you can make changes to the content of your website and push those to the remote repository.
 
 ```
+git add .
+git commit -m "updating content"
+git push origin master
+```
+
+However, this only keeps the content in synchrony with the remote repository it does not update the website.
 
 ```
+git submodule add https://github.com/<USERNAME>/<USERNAME>.github.io.git public
+./deploy.sh "comment"
+```
+The contents of deploy.sh can be seen [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages)
 
 ## Update academic-kickstart version:
 I have found updating the academic-kickstart version and subsequently the website to be very complicated!
