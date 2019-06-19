@@ -1,4 +1,5 @@
 +++
+headless = true
 # Projects widget.
 widget = "projects"
 active = true
@@ -41,4 +42,3 @@ filter_default = 0
 #   tag = ".demo"
 
 +++
-

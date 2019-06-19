@@ -1,4 +1,5 @@
 +++
+headless = true
 # Selected Publications widget.
 # This widget displays publications from `content/publication/` which have
 # `selected = true` in their `+++` front matter.
