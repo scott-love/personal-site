@@ -100,3 +100,4 @@ Leave the server running and any other changes you make will be automatically vi
 The [Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages) page from Hugo outlines a nice way to store all the files of your site on GitHub.
 
 ## Update Academic-Kickstart version:
+I have found updating the Academic-Kickstart version and subsequently the website to be very complicated!
