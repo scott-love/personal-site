@@ -23,7 +23,7 @@ publication_short = ""
 
 # Abstract and optional shortened version.
 abstract = "Face–voice integration has been extensively explored among healthy participants during the last decades. Nevertheless, while binding alterations constitute a core feature of many psychiatric diseases, these crossmodal processing have been very little explored in these populations. This chapter presents three studies offering an integrative use of behavioural, electrophysiological and neuroimaging techniques to explore the audio–visual integration of emotional stimuli in alcohol dependence. These results constitute a preliminary step towards a multidisciplinary exploration of crossmodal processing in psychiatry, extending to other stimulations, sensorial modalities and populations. The exploration of impaired crossmodal abilities could renew the knowledge on “normal” audio–visual integration and could lead to innovative therapeutic programs."
-abstract_short = ""
+summary = ""
 
 
 # Is this a selected publication? (true/false)
@@ -52,7 +52,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{name = "Custom Link", url = "http://example.org"}]
+# links = [{name = "Custom Link", url = "http://example.org"}]
 
 # Does this page contain LaTeX math? (true/false)
 math = false
