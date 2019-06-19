@@ -99,5 +99,18 @@ Leave the server running and any other changes you make will be automatically vi
 ## Github version control:
 The [Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages) page from Hugo outlines a nice way to store all the files of your site on GitHub.
 
-## Update Academic-Kickstart version:
-I have found updating the Academic-Kickstart version and subsequently the website to be very complicated!
+## Updating the website content:
+Using the GitHub method above I do not keep a local copy of any of the files. Here is the process I follow to update the website content.
+```
+git clone https://github.com/<USERNAME>/<YOUR-PROJECT>
+cd <YOUR-PROJECT>/
+git rm -r public
+```
+At this point you can make changes to the content of your website and push those to the remote repository.
+
+```
+
+```
+
+## Update academic-kickstart version:
+I have found updating the academic-kickstart version and subsequently the website to be very complicated!
