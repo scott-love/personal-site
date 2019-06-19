@@ -26,7 +26,7 @@ abstract = "The ability to recognize an individual from their voice is a widespr
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
