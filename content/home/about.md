@@ -9,7 +9,7 @@ date = "2016-04-20T00:00:00"
 headless = true
 
 # Order that this section will appear in.
-weight = 5
+weight = 10
 
 # List your academic interests.
 [interests]
