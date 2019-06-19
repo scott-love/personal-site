@@ -1,4 +1,6 @@
 +++
+author = "scott"
+
 # About/Biography widget.
 widget = "about"
 active = true
