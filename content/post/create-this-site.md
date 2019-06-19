@@ -98,3 +98,5 @@ Leave the server running and any other changes you make will be automatically vi
 
 ## Github version control:
 The [Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages) page from Hugo outlines a nice way to store all the files of your site on GitHub.
+
+## Update Academic-Kickstart version:
