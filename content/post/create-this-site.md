@@ -123,4 +123,6 @@ git submodule add https://github.com/<USERNAME>/<USERNAME>.github.io.git public
 The contents of deploy.sh can be seen [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages)
 
 ## Update academic-kickstart version:
-I have found updating the academic-kickstart version and subsequently the website to be very complicated! I succeeded once following the instructions [here](https://sourcethemes.com/academic/docs/update/) but the second time I tried I failed. 
+I have found updating the academic-kickstart version and subsequently the website to be tricky! Follow the instructions [here](https://sourcethemes.com/academic/docs/update/). However, I was only ever able to update using the ZIP  there. Uninstall the current version by deleting the contents of the "themes/academic/" folder inside \<YOUR-PROJECT\> and replacing it with the downloaded files.
+
+At this point you still need to follow the release notes and update your content and config files to take into account the "Breaking changes". If you have jumped a few versions you will need to do this in sequence for each version change (e.g. v3.1 to v3.2 before doing v3.2 to v3.3)
