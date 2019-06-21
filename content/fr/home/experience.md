@@ -22,7 +22,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Researcher (Chargé de Recherche)"
+  title = "Chargé de Recherche"
   company = "INRA-PRC"
   company_url = "https://www6.val-de-loire.inra.fr/physiologie_reproduction_comportements_eng/"
   location = "Nouzilly, France"
@@ -31,7 +31,7 @@ date_format = "Jan 2006"
   description = """ """
 
 [[experience]]
-  title = "Postdoc Research Engineer"
+  title = "Postdoc Ingénieur de recherche"
   company = "Université François-Rabelais de Tours, Inserm, Imagerie et Cerveau UMR U930"
   company_url = "https://ibrain.univ-tours.fr/english-version-/imaging-brain-702734.kjsp"
   location = "Tours, France"
@@ -40,7 +40,7 @@ date_format = "Jan 2006"
   description = """"""
 
 [[experience]]
-  title = "Postdoc Researcher"
+  title = "Postdoc Chercheur"
   company = "Laboratoire de Psychologie Cognitive UMR7290, Aix-Marseille Université / CNRS"
   company_url = "https://lpc.univ-amu.fr/en"
   location = "Marseille, France"
@@ -49,7 +49,7 @@ date_format = "Jan 2006"
   description = """"""
 
 [[experience]]
-  title = "Postdoc Researcher"
+  title = "Postdoc Chercheur"
   company = "Institut de Neurosciences de la Timone UMR7289, Aix-Marseille Université / CNRS"
   company_url = "http://www.int.univ-amu.fr/?lang=en"
   location = "Marseille, France"
@@ -58,7 +58,7 @@ date_format = "Jan 2006"
   description = """"""
 
 [[experience]]
-  title = "Postdoc Researcher"
+  title = "Postdoc Chercheur"
   company = "Indiana University"
   company_url = "https://psych.indiana.edu"
   location = "Bloomington, USA"
