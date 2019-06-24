@@ -37,6 +37,9 @@ education:
   - course: M.Sc. Research Methods of Psychological Science
     institution: University of Glasgow, UK
     year: 2007
+  - course: MA Social Sciences: Psychology & Philosophy
+    institution: University of Glasgow, UK
+    year: 2006
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
