@@ -36,7 +36,7 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["voice","identity","experience"]
+tags = ["voix","identité","expérience"]
 
 # Links (optional).
 url_pdf = "https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01180/pdf"

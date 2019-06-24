@@ -36,7 +36,7 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = []
+tags = ["regard","EEG"]
 
 # Links (optional).
 url_pdf = "https://www.researchgate.net/publication/275668197_Social_decisions_affect_neural_activity_to_perceived_dynamic_gaze/download"
