@@ -36,7 +36,7 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = []
+tags = ["animacy","biological motion","behaviour","fmri"]
 
 # Links (optional).
 url_pdf = ""
