@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Researcher
+role: Chargé de Recherche
 
 # Organizations/Affiliations
 organizations:
@@ -37,6 +37,9 @@ education:
   - course: M.Sc. Research Methods of Psychological Science
     institution: University of Glasgow, UK
     year: 2007
+  - course: MA Social Sciences - Psychology & Philosophy
+    institution: University of Glasgow, UK
+    year: 2006
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -75,8 +78,7 @@ email: ""
 #- Visitors
 ---
 
-# About
+# A propos
+Je suis chercheur en neurosciences cognitives utilisant actuellement des techniques de neuroimagerie chez des animaux de ferme pour étudier : 1) l'influence de l'environnement précoce sur le développement comportemental et neurobiologique et 2) la perception sociale et ses mechanismes neuronaux sous jacent.
 
-I'm a cognitive neuroscientist currently using neuroimaging techniques in farm animals to investigate: 1) how early environment influences behavioural and neurobiological development and 2) social perception and its underlying neural mechanisms.
-
-Since November 2017, I have been working as a researcher (Chargé de Recherche) at the [PRC](https://www6.val-de-loire.inra.fr/physiologie_reproduction_comportements) (Physiologie de la Reproduction et des Comportements) research unit in [Nouzilly](https://www.google.com/maps/place/Inra+Centre+Val+De+Loire/@47.544757,0.782861,15z/data=!4m5!3m4!1s0x0:0xe0400dff4907150e!8m2!3d47.544757!4d0.782861), France.
+Depuis novembre 2017, je suis Chargé de Recherche à l'Unité Mixte de Recherche [PRC](https://www6.val-de-loire.inra.fr/physiologie_reproduction_comportements) (Physiologie de la Reproduction et des Comportements) à [Nouzilly](https://www.google.com/maps/place/Inra+Centre+Val+De+Loire/@47.544757,0.782861,15z/data=!4m5!3m4!1s0x0:0xe0400dff4907150e!8m2!3d47.544757!4d0.782861), France.
