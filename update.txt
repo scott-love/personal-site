@@ -4,6 +4,5 @@ git rm -r public
 
 ## make changes ##
 
-git submodule add https://github.com/scott-love/scott-love.github.io.git public "comment"
-
-## test ## 
+git submodule add https://github.com/scott-love/scott-love.github.io.git public
+./deploy.sh "comment"
