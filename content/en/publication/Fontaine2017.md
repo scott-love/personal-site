@@ -51,7 +51,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# links = [{name = "Custom Link", url = "http://example.org"}]
+links = [{name = "DOI", url = "https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01180/full"}]
 
 # Does this page contain LaTeX math? (true/false)
 math = false
