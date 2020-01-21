@@ -23,7 +23,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Researcher (Chargé de Recherche)"
-  company = "INRA-PRC"
+  company = "INRAE-PRC"
   company_url = "https://www6.val-de-loire.inra.fr/physiologie_reproduction_comportements_eng/"
   location = "Nouzilly, France"
   date_start = "2017-11-01"
