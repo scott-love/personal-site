@@ -1,6 +1,6 @@
 +++
 title = "Object and food novelty induce distinct patterns of c-fos immunoreactivity in amygdala and striatum in domestic male chicks (Gallus gallus domesticus)"
-date = 2020-03-02T16:23:21+01:00
+date = 2019-12-02T16:23:21+01:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
