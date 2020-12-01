@@ -30,14 +30,14 @@ publication_types: ["2"]
 publication: "Behavioural Brain Research"
 publication_short: ""
 
-abstract: "It has been proposed that we make sense of the movements of others by observing fluctuations in the kinematic properties of their actions. At the neural level, activity in the human motion complex (hMT+) and posterior superior temporal sulcus (pSTS) has been implicated in this relationship. However, previous neuroimaging studies have largely utilized brief, diminished stimuli, and the role of relevant kinematic parameters for the processing of human action remains unclear. We addressed this issue by showing extended-duration natural displays of an actor engaged in two common activities, to 12 participants in an fMRI study under passive viewing conditions. Our region-of-interest analysis focused on three neural areas (hMT+, pSTS, and fusiform face area) and was accompanied by a whole-brain analysis. The kinematic properties of the actor, particularly the speed of body part motion and the distance between body parts, were related to activity in hMT+ and pSTS. Whole-brain exploratory analyses revealed additional areas in posterior cortex, frontal cortex, and the cerebellum whose activity was related to these features. These results indicate that the kinematic properties of peoples' movements are continually monitored during everyday activity as a step to determining actions and intent."
+abstract: "Avoidance of novelty, termed neophobia, protects animals from potential dangers but can also impair their adaptation to novel environments or food resources. This behaviour is particularly well described in birds but the neurobiological correlates remain unexplored. Here, we measured neuronal activity in the amygdala and the striatum, two brain regions believed to be involved in novelty detection, by labelling the early gene c-fos following chicks exposure to a novel food (NF), a novel object (NO) or a familiar food (FF). NF and NO chicks showed significantly longer latencies to touch the food, less time eating and emitted more fear-vocalizations than control chicks. Latency to touch the food was also longer for NO than for NF chicks. Significantly higher densities of c-fos positive cells were present in all the nuclei of the arcopallium/amygdala of NF and NO chicks compared to FF chicks. Also, NO chicks showed higher positive cell densities than NF chicks in the posterior amygdaloid, the intermediate and the medial arcopallium. Exposure to novel food or object induced a similar increase in c-fos expression in the nucleus accumbens and the medial striatum. Our data provide evidence activation of the arcopallium/amygdala is specific of the type of novelty. The activation of striatum may be more related to novelty seeking."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags:
-- "biological motion"
-- "fmri"
+- "neophobia"
+- "emotion"
 featured: false
 
 # links:
