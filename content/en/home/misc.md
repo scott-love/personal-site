@@ -1,20 +1,23 @@
-+++
+---
+# An instance of the About widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: custom
 
-headless = true
-# Custom widget.
-# An example of using the custom widget to create your own homepage section.
-# To create more sections, duplicate this file and edit the values below as desired.
-widget = "custom"
-active = true
-date = "2016-04-20T00:00:00"
+# Activate this widget? true/false
+active: false
 
-# Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
-title = "Twitter Feed"
-subtitle = ""
+# This file represents a page section.
+headless: true
 
-# Order that this section will appear in.
-weight = 50
+# Order that this section appears on the page.
+weight: 70
 
-+++
+title: Twitter Feed
 
-{{< twitter "love_a_scott" >}}
+# Choose the user profile to display
+# This should be the username (folder name) of a profile in your `content/authors/` folder.
+# See https://wowchemy.com/docs/get-started/#introduce-yourself
+author: scott
+---
+
+{{% twitter love_a_scott %}}

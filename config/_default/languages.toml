@@ -7,44 +7,55 @@
   languageCode = "en-us"
   contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
+  [fr]
+    languageCode = "fr"
+    contentDir = "content/fr"
+    title = "Scott Love"
+    [fr.params]
+      description = ""
+  #  [[fr.menu.main]]
+  #    name = "scott"
+  #    url = "#about"
+  #    weight = 1
+
+  [[fr.menu.main]]
+    name = "Accueil"
+    url = "#about"
+    weight = 10
+
+  [[fr.menu.main]]
+    name = "Publications"
+    url = "#featured"
+    weight = 20
+
+  [[fr.menu.main]]
+    name = "Posts"
+    url = "#posts"
+    weight = 30
+
+  [[fr.menu.main]]
+    name = "Projets"
+    url = "#projects"
+    weight = 40
+
+  [[fr.menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 50
+
+  [[fr.menu.main]]
+    name = "CV"
+    url = "static/files/cv.pdf"
+    weight = 60
+
 # Uncomment the lines below to configure your website in a second language.
-[fr]
-  languageCode = "fr"
-  contentDir = "content/fr"
-  title = "Scott Love"
-  [fr.params]
-    description = ""
-#  [[fr.menu.main]]
-#    name = "scott"
+#[zh]
+#  languageCode = "zh-Hans"
+#  contentDir = "content/zh"
+#  title = "Chinese website title..."
+#  [zh.params]
+#    description = "Site description in Chinese..."
+#  [[zh.menu.main]]
+#    name = "Wo"
 #    url = "#about"
 #    weight = 1
-
-[[fr.menu.main]]
-  name = "Accueil"
-  url = "#about"
-  weight = 10
-
-[[fr.menu.main]]
-  name = "Publications"
-  url = "#featured"
-  weight = 20
-
-[[fr.menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 30
-
-[[fr.menu.main]]
-  name = "Projets"
-  url = "#projects"
-  weight = 40
-
-[[fr.menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 50
-
-[[fr.menu.main]]
-  name = "CV"
-  url = "files/cv.pdf"
-  weight = 60

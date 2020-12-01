@@ -1,47 +1,35 @@
-+++
-title = "Sheep Cortex"
-date = 2017-01-11T23:41:46+01:00
-draft = false
-
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["ovine","anatomy","cortex","mri"]
-
-# Project summary to display on homepage.
-summary = ""
-
-# Slides (optional).
-#   Associate this page with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references
-#   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = ""
+---
+title: Sheep Cortex
+summary: An example of using the in-built project page.
+tags:
+- sheep
+- anatomy
+- cortex
+- mri
+date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link: ""
 
-# Links (optional).
-url_pdf = ""
-url_code = ""
-url_dataset = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
+image:
+  caption: The Sheep Cortex
+  focal_point: Smart
 
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com"}]
+#links:
+#- icon: twitter
+  #icon_pack: fab
+  #name: Follow
+  #url: https://twitter.com/georgecushen
+#url_code: ""
+#url_pdf: ""
+#url_slides: ""
+#url_video: ""
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-[image]
-  # Caption (optional)
-  caption = ""
-
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Center"
-+++
-
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
 See this poster on [Figshare](https://figshare.com/articles/Surface-based_cortical_parcellation_of_the_sheep_brain/5426518) for some more details.
