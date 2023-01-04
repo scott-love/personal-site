@@ -1,14 +1,19 @@
 ---
-title: "“BAA, BAA”: Can Sheep Talk to Each Other?"
+title: "The use and impact of auditory stimulation in animals"
 authors:
+- Guillaume Ubiema
 - Marine Siwiaszczyk
+- Celine Parias
+- Roman Bresso
+- Christophe Hay
+- Baptiste Mulot
 - Scott A. Love
 - Elodie Chaillou
 
 author_notes:
 - ""
-date: "2022-05-27T16:23:21+01:00"
-doi: "10.3389/frym.2022.703514"
+date: "2022-09-30T16:23:21+01:00"
+doi: "10.46298/jimis.9971"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -20,23 +25,23 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Frontiers for Young Minds"
+publication: "Journal of Interdisciplinary Methodologies and Issues in Sciences"
 publication_short: ""
 
-abstract: "If you have ever been out to the countryside in the spring, you might have heard sheep bleating to their lambs. Sheep also bleat when they are separated from the flock or stressed in some other way. To us, all these bleats sound very similar. But do you think they also sound similar to the lambs? Or do you think the lambs know whose mother is calling and what they are saying? Scientists try to interpret the bleats of sheep by observing their behavior when they hear these sounds. They study the sound waves of recorded bleats to identify each sheep’s unique voice and even determine which emotions the sheep are feeling. They also investigate the brain to find out what is going on inside the heads of sheep when they hear and understand the sounds of other sheep. Studies show that sheep really can recognize each other’s voices and communicate vocally."
+abstract: "Music can cause pleasant sensations in humans whereas some noises can cause discomfort. The effects of music and noise have also been somewhat studied in animals, showing different impacts. In this review we aim to illustrate the differences and similarities between animals, in terms of their sensitivity to auditory stimuli (noise or music), by first recalling some generalities about the physical characteristics of sound and the biological bases of hearing. Second, based on the studies reported in this review, we conclude that ambient noise is harmful and/or stressful, and that musical sounds can take many forms with a large range of impacts in animals. Finally, we present two practical examples of the use of music with animals (one in the context of a zoo and the other in cattle breeding) and an example of an experiment designed to understand the impact of music on neonate lambs. These three examples highlight how music can help to improve animal welfare."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags:
-- "sheep"
+- "music"
 - "vocalization"
-featured: true
+featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.frontiersin.org/articles/10.3389/frym.2022.703514/pdf'
+url_pdf: 'https://jimis.episciences.org/9971/pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
