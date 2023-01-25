@@ -1,6 +1,6 @@
 ---
 title: Sheep Cortex
-summary: An example of using the in-built project page.
+summary:
 tags:
 - sheep
 - anatomy
