@@ -11,7 +11,7 @@ authors:
 author_notes:
 - ""
 date: "2024-04-24T16:23:21+01:00"
-doi: "10.1037/xhp0000827"
+doi: "10.1002/aur.3134"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
