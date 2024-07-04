@@ -1,22 +1,22 @@
 ---
-title: SheepVoice
-summary:
+title: Sheep Voice fMRI
+summary: Investigating the sheep auditory cortex with fMRI
 tags:
-- ovin
-- irm
-- irmf
-- cerveau
-- voix
-- sociale
+- sheep
+- mri
+- fmri
+- brain
+- voice
+- social
 
 date: "2018-02-08T18:06:20+01:00"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
-#image:
-#  caption: Photo by rawpixel on Unsplash
-#  focal_point: Smart
+image:
+  caption: Photo by Camille Pluchot
+  focal_point: Smart
 
 links:
 - icon: ""
@@ -35,4 +35,4 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-ADD TEXT HERE
+The project, Functional Neuroimaging of the Vocalisation Perception Mechanisms of Sheep (SheepVoicefMRI), is funded by the French National Research Agency - ANR-20-CE20-0001.
