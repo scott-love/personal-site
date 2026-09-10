@@ -1,18 +1,18 @@
 # Languages
 #   Create a `[X]` block for each language you want, where X is the language ID.
-#   Refer to https://sourcethemes.com/academic/docs/language/
+#   Refer to https://docs.hugoblox.com/reference/language/
 
 # Configure the English version of the site.
 [en]
-  languageCode = "en-us"
+  locale = "en-us"
   contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
-  [fr]
-    languageCode = "fr"
-    contentDir = "content/fr"
-    title = "Scott Love"
-    [fr.params]
-      description = ""
+[fr]
+  locale = "fr"
+  contentDir = "content/fr"
+  title = "Scott Love"
+  [fr.params]
+    description = ""
   #  [[fr.menu.main]]
   #    name = "scott"
   #    url = "#about"
@@ -20,37 +20,37 @@
 
   [[fr.menu.main]]
     name = "Accueil"
-    url = "#about"
+    url = "/#about"
     weight = 10
 
   [[fr.menu.main]]
     name = "Publications"
-    url = "#featured"
+    url = "/#featured"
     weight = 20
 
   [[fr.menu.main]]
     name = "Posts"
-    url = "#posts"
+    url = "/#posts"
     weight = 30
 
   [[fr.menu.main]]
     name = "Projets"
-    url = "#projects"
+    url = "/#projects"
     weight = 40
 
   [[fr.menu.main]]
     name = "Contact"
-    url = "#contact"
+    url = "/#contact"
     weight = 50
 
   [[fr.menu.main]]
     name = "CV"
-    url = "static/files/cv.pdf"
+    url = "/files/cv.pdf"
     weight = 60
 
 # Uncomment the lines below to configure your website in a second language.
 #[zh]
-#  languageCode = "zh-Hans"
+#  locale = "zh-Hans"
 #  contentDir = "content/zh"
 #  title = "Chinese website title..."
 #  [zh.params]
