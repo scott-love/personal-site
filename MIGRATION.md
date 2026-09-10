@@ -109,6 +109,21 @@ See **[MIGRATION_CHECKLIST.md](./MIGRATION_CHECKLIST.md)** for detailed step-by-
   - Use a pre-TASK-6 checkpoint commit/tag on `migrate/hugoblox`.
   - If module resolution or template compatibility regressions occur, restore `go.mod`/`go.sum` from that checkpoint.
 
+### Migration Tracking Notes (Issue 9 / TASK-8: Layout overrides → HugoBlox blocks)
+- Layout inventory audit result:
+  - Local `layouts/` directory is not present in this repository.
+  - No local `layouts/shortcodes/` or `layouts/partials/` overrides were found.
+  - Interpretation: template rendering currently inherits from HugoBlox modules, not local Wowchemy overrides.
+- Wowchemy-specific template code audit:
+  - No `wowchemy` references exist in any local layout/template override files because no local layout override files exist.
+  - Remaining Wowchemy references are in legacy comments/content metadata and are tracked separately from layout migration.
+- HugoBlox block-system alignment notes:
+  - HugoBlox landing pages are block/section based; homepage composition should come from `content/*/home/*.md` sections rather than local `layouts/` overrides.
+  - Common HugoBlox block families include hero, features, about/profile, experience, collection/pages, contact, and CTA blocks.
+- TASK-8 migration action taken:
+  - Added `layouts.wowchemy-backup/` snapshot directory as rollback anchor for this migration step.
+  - Since there were no local layout overrides to migrate, no template file deletions or path rewrites were required in this repository.
+
 ---
 
 ## Phase 1: Data Pipeline Discovery
