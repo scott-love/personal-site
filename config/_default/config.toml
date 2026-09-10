@@ -1,42 +1,40 @@
 # Configuration of Hugo
-# Guide: https://wowchemy.com/docs/get-started/
+# Guide: https://docs.hugoblox.com/tutorial/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 #
 # This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
-# Title of your site
 title = "Scott Love"
-
-# The URL of your site.
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://scott-love.github.io/"
-
-# Enter a copyright notice to display in the site footer.
-# To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
-copyright = "&copy; 2020 Scott Love"
+baseURL = "https://scott-love.github.io/"
 
 ############################
-## Advanced options below ##
+## LANGUAGE
 ############################
 
-# Get last modified date for content from Git?
-enableGitInfo = false
-
-# Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
-hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
+hasCJKLanguage = false
 defaultContentLanguageInSubdir = false
-removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
+removePathAccents = true
 
-summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
-paginate = 10  # Number of items per page in paginated lists.
+############################
+## ADVANCED
+############################
+
+[build]
+  writeStats = true
+
+enableGitInfo = false
+summaryLength = 30
 enableEmoji = true
 enableRobotsTXT = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+disableAliases = true
 
-# Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
+[pagination]
+  pagerSize = 10
+
 [permalinks]
   authors = "/author/:slug/"
   tags = "/tag/:slug/"
@@ -44,41 +42,31 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   publication_types = "/publication-type/:slug/"
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
-  section = [ "HTML", "RSS" ]
+  home = ["HTML", "RSS", "headers", "redirects"]
+  section = ["HTML", "RSS"]
 
-[mediaTypes."application/manifest+json"]
-  suffixes = ["webmanifest"]
-
-[outputFormats.WebAppManifest]
-  mediaType = "application/manifest+json"
-  rel = "manifest"
-
-# Configure the Markdown renderer.
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+      unsafe = true
   [markup.highlight]
-    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+    lineNos = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
 
 [imaging]
   resampleFilter = "lanczos"
-  quality = 75
-  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
+  quality = 90
+  anchor = "smart"
 
-# Taxonomies.
 [taxonomies]
   tag = "tags"
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
 
-# Related content.
 [related]
   threshold = 80.0
   includeNewer = true
@@ -103,10 +91,3 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   [[related.indices]]
     name = "authors"
     weight = 20.0
-
-# Install Wowchemy
-[module]
-    [[module.imports]]
-    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
-  [[module.imports]]
-    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify"

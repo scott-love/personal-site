@@ -1,0 +1,9 @@
+# Hugo modules
+# Docs: https://gohugo.io/hugo-modules/
+
+[module]
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
+
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify"
