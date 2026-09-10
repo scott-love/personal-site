@@ -148,7 +148,9 @@ See **[MIGRATION_CHECKLIST.md](./MIGRATION_CHECKLIST.md)** for detailed step-by-
   - legacy `content/en/home/` and `content/fr/home/` widget files were removed from active content after their data was folded into the landing pages
 - Validation:
   - `python scripts/migrate_content_frontmatter.py --root . --check` passes
-  - direct runner build validation is currently blocked in this environment because `hugo` is not installed (`hugo: command not found`), so `hugo --verbose` / `hugo server` still need to be rerun in a Hugo-enabled environment for final visual verification
+  - build validation now runs in this environment via `go run github.com/gohugoio/hugo@v0.165.0 --gc --minify`
+  - current build status: succeeds with template/layout warnings (`found no layout file for kind home/taxonomy/term/section/page`) and one upstream deprecation warning (`.Site.AllPages`)
+  - visual verification (`hugo server`) remains pending as a follow-up check in an interactive environment
 
 ---
 
