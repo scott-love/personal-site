@@ -30,6 +30,7 @@ Use this checklist to track progress through the migration. Check off items as c
     - Hugo: Latest stable (0.165.0+)
     - Go: 1.23+ (current stable)
   - [x] Document installation steps for your OS
+  - [x] Record module version pins to reuse during TASK-6
   - **Reference Issue**: [TASK-3](#)
 
 ---
@@ -68,31 +69,30 @@ Use this checklist to track progress through the migration. Check off items as c
 
 ### Update Wowchemy → HugoBlox Modules
 - [ ] **TASK-6**: Update Hugo modules to HugoBlox
+  - [x] **Review HugoBlox module structure**
+    - [x] Check: `https://github.com/HugoBlox/hugo-blox-builder/blob/main/go.mod`
+    - [x] Document namespace migration direction: `github.com/HugoBlox/...`
+    - [x] Confirm module versions should be reused from **TASK-3** during initial migration
+    - **Reference Issue**: [#6](https://github.com/scott-love/personal-site/issues/6)
+
   - [ ] **Inspect current `go.mod`**:
     ```bash
     cat go.mod
     ```
-    Should show:
-    ```go
-    require (
-      github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20201125...
-      github.com/wowchemy/wowchemy-hugo-modules/netlify-cms-academic v0.0.0-20201125...
-    )
-    ```
-  
-  - [ ] **Update `go.mod`**: Replace Wowchemy refs with HugoBlox
-    ```go
-    require (
-      github.com/HugoBlox/hugo-blox-core/v5 v5.9.7
-      github.com/HugoBlox/hugo-blox-cms/v5 v5.9.7
-    )
-    ```
-    (Use latest stable versions from https://github.com/HugoBlox)
-  
+    Should show legacy Wowchemy refs that need migration.
+
+  - [ ] **Update `go.mod`**: Replace Wowchemy refs with HugoBlox paths
+    - Replace legacy `github.com/wowchemy/...` with `github.com/HugoBlox/...` equivalents.
+    - Keep versions pinned to values agreed in TASK-3 for first pass.
+    - Avoid opportunistic upgrades in the same commit.
+
+  - [ ] Create checkpoint before module edits (commit and/or tag, e.g. `pre-task6-modules`)
   - [ ] Run: `go mod tidy`
   - [ ] Run: `hugo mod graph` (verify module tree)
   - [ ] Test build: `hugo server`
+  - [ ] Run migration CI/build from `migrate/hugoblox`
   - [ ] Document any module resolution errors
+  - [ ] **Rollback plan validated**: restore `go.mod`/`go.sum` from pre-TASK-6 checkpoint if needed
   - **Reference Issue**: [TASK-6](#)
 
 ---
