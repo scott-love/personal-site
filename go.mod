@@ -1,8 +1,8 @@
 module github.com/wowchemy/starter-academic
 
-go 1.15
+go 1.23
 
 require (
-	github.com/wowchemy/wowchemy-hugo-modules/netlify-cms-academic v0.0.0-20201125230219-3a03b728de8f // indirect
-	github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20201125230219-3a03b728de8f
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-core v0.4.1 // indirect
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.2.0 // indirect
 )
