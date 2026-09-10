@@ -94,6 +94,21 @@ See **[MIGRATION_CHECKLIST.md](./MIGRATION_CHECKLIST.md)** for detailed step-by-
   - fatal error: `can't evaluate field GoogleAnalytics in type interface {}` from `partials/marketing/google_analytics.html`
 - This behavior is treated as expected during Phase 0 modernization after Hugo upgrade and is tracked for remediation in subsequent migration tasks (no ad hoc fix in Issue 5 checkpoint step).
 
+### Migration Tracking Notes (Issue 6 / TASK-6)
+- Reviewed HugoBlox module direction using upstream module definition:
+  - `https://github.com/HugoBlox/hugo-blox-builder/blob/main/go.mod`
+- Confirmed migration policy for module namespace updates:
+  - Replace legacy `github.com/wowchemy/...` module references with `github.com/HugoBlox/...` equivalents where applicable.
+- Version pinning rule for TASK-6:
+  - Reuse module versions agreed in **TASK-3** during initial path migration; avoid unplanned version bumps while resolving path changes.
+- Validation sequence for module migration changes:
+  1. `go mod tidy`
+  2. `hugo mod graph`
+  3. `hugo server` (and migration CI on `migrate/hugoblox`)
+- Risk control / rollback approach:
+  - Use a pre-TASK-6 checkpoint commit/tag on `migrate/hugoblox`.
+  - If module resolution or template compatibility regressions occur, restore `go.mod`/`go.sum` from that checkpoint.
+
 ---
 
 ## Phase 1: Data Pipeline Discovery
