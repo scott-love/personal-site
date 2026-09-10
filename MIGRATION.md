@@ -85,6 +85,15 @@
 ### Work Items
 See **[MIGRATION_CHECKLIST.md](./MIGRATION_CHECKLIST.md)** for detailed step-by-step tasks.
 
+### Migration Tracking Notes (Issue 5)
+- Hugo installation validated on migration environment:
+  - `hugo v0.165.0-76a5e1880ab46688155b02e99bab9be2a6134492+extended darwin/arm64`
+- `hugo server` on `migrate/hugoblox` currently reports deprecations and one fatal render error from legacy Wowchemy templates:
+  - deprecated config keys: `languages.fr.languageCode`, `languages.en.languageCode`
+  - deprecated template usage: `.Site.LanguageCode`, `.Site.Data`
+  - fatal error: `can't evaluate field GoogleAnalytics in type interface {}` from `partials/marketing/google_analytics.html`
+- This behavior is treated as expected during Phase 0 modernization after Hugo upgrade and is tracked for remediation in subsequent migration tasks (no ad hoc fix in Issue 5 checkpoint step).
+
 ---
 
 ## Phase 1: Data Pipeline Discovery

@@ -10,26 +10,26 @@ Use this checklist to track progress through the migration. Check off items as c
 
 ### Backup & Planning
 - [ ] **TASK-1**: Back up current site
-  - [ ] Clone `master` to local backup branch: `git branch backup/2026-09-09-master`
+  - [x] Clone `master` to local backup branch: `git branch backup/2026-09-09-master`
   - [ ] Export current config files
   - [ ] Take screenshot of deployed site (for comparison)
-  - [ ] Document current versions: `hugo version`, `go version`
+  - [x] Document current versions: `hugo version`, `go version`
   - **Reference Issue**: [TASK-1](#)
 
-- [ ] **TASK-2**: Review HugoBlox migration guide
-  - [ ] Read: https://hugoblox.com/docs/guide
-  - [ ] Read: https://hugoblox.com/wowchemy (rebrand explanation)
-  - [ ] Review: HugoBlox breaking changes from Wowchemy
+- [x] **TASK-2**: Review HugoBlox migration guide
+  - [x] Read: https://hugoblox.com/docs/guide
+  - [x] Read: https://hugoblox.com/wowchemy (rebrand explanation)
+  - [x] Review: HugoBlox breaking changes from Wowchemy
   - **Reference Issue**: [TASK-2](#)
 
-- [ ] **TASK-3**: Plan Go & Hugo versions
-  - [ ] Current versions on local machine:
+- [x] **TASK-3**: Plan Go & Hugo versions
+  - [x] Current versions on local machine:
     - Hugo: `hugo version`
     - Go: `go version`
-  - [ ] Target versions:
+  - [x] Target versions:
     - Hugo: Latest stable (0.165.0+)
     - Go: 1.23+ (current stable)
-  - [ ] Document installation steps for your OS
+  - [x] Document installation steps for your OS
   - **Reference Issue**: [TASK-3](#)
 
 ---
@@ -38,12 +38,23 @@ Use this checklist to track progress through the migration. Check off items as c
 
 ### Update Hugo
 - [ ] **TASK-4**: Update Hugo from 0.78.2 → latest stable
-  - [ ] Download latest Hugo from https://github.com/gohugoio/hugo/releases
-  - [ ] Install to your system PATH (verify: `hugo version`)
-  - [ ] Test build locally: `hugo server` (from migrate/hugoblox branch)
-  - [ ] Document any build errors or warnings
-  - [ ] Fix any Markdown/syntax errors that arise
+  - [x] Download latest Hugo from https://github.com/gohugoio/hugo/releases
+  - [x] Install to your system PATH (verify: `hugo version`)
+  - [x] Test build locally: `hugo server` (from migrate/hugoblox branch)
+  - [x] Document any build errors or warnings
+  - [ ] Fix any Markdown/syntax errors that arise *(deferred to later migration tasks where fixes are explicitly scoped)*
   - **Reference Issue**: [TASK-4](#)
+  - **Tracking note (Issue 5 evidence)**:
+    - Installed Hugo: `v0.165.0+extended darwin/arm64`
+    - Warnings observed:
+      - `languages.fr.languageCode` deprecated → use `languages.fr.locale`
+      - `languages.en.languageCode` deprecated → use `languages.en.locale`
+      - `.Site.LanguageCode` deprecated → use `.Site.Language.Locale`
+      - `.Site.Data` deprecated → use `hugo.Data`
+    - Fatal error observed:
+      - `can't evaluate field GoogleAnalytics in type interface {}`
+      - Source chain includes `layouts/partials/marketing/google_analytics.html` in legacy Wowchemy module
+    - Interpretation: expected compatibility break after Hugo upgrade; remediation tracked for subsequent migration tasks (no ad hoc config/template fixes in this checkpoint step).
 
 ### Update Go
 - [ ] **TASK-5**: Update Go from 1.15 → latest stable
