@@ -1,20 +1,8 @@
 ---
 title: Git(Hub), Hugo and Academic
-date: 2018-02-07T18:31:37+01:00
+date: '2018-02-07T18:31:37Z'
 draft: false
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-view: 2
-
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ""
-  image: ""
 ---
-
 A quick(ish) tutorial on how I setup my personal but work related [website](https://scott-love.github.io) using Git(Hub), Hugo and Academic on a Mac. This is a fairly *simple* and completely *free* way to host an academic personal website. The process came from two main sources: 1. The [documentation](https://sourcethemes.com/academic/docs/) for Academic and; 2. A blog post by [George Cushen](https://georgecushen.com/create-your-website-with-hugo/).
 
 ## So what did I do:

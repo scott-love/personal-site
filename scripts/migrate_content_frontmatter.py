@@ -144,7 +144,7 @@ def normalize_date(value):
             dt = datetime.fromisoformat(text)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return dt.replace(tzinfo=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def normalize_doi(value: str | None) -> str | None:
@@ -376,6 +376,8 @@ def migrate_home_section(lang: str, name: str, data: dict, body: str) -> dict | 
         section = OrderedDict([("block", "resume-experience"), ("id", "experience"), ("content", content)])
         design = OrderedDict()
         spacing = prune(copy.deepcopy((data.get("design") or {}).get("spacing") or {}))
+        if isinstance(spacing, dict):
+            spacing.pop("date_format", None)
         if spacing:
             design["spacing"] = spacing
         if design:
@@ -525,17 +527,19 @@ def migrate_repo(root: Path) -> dict:
                 pass
 
     for path in sorted(content_dir.rglob("*.md")):
-        if "home" in path.parts:
-            continue
         relative_parts = path.relative_to(content_dir).parts
+        if "home" in relative_parts:
+            continue
+        if len(relative_parts) >= 2 and relative_parts[1] == "authors":
+            continue
         data, body = read_front_matter(path)
-        if len(relative_parts) >= 3 and relative_parts[1] == "publication":
+        if len(relative_parts) >= 2 and relative_parts[1] == "publication" and path.name == "_index.md":
+            migrated = migrate_section_index(data)
+        elif len(relative_parts) >= 3 and relative_parts[1] == "publication":
             migrated = migrate_publication(data)
         elif len(relative_parts) >= 3 and relative_parts[1] == "project":
             migrated = migrate_project(data)
         elif len(relative_parts) >= 2 and relative_parts[1] == "post" and path.name == "_index.md":
-            migrated = migrate_section_index(data)
-        elif len(relative_parts) >= 2 and relative_parts[1] == "publication" and path.name == "_index.md":
             migrated = migrate_section_index(data)
         elif len(relative_parts) >= 2 and relative_parts[1] == "post":
             migrated = migrate_post(data)
@@ -588,7 +592,8 @@ def detect_non_iso_dates(root: Path) -> list[str]:
             value = data.get(key)
             if value is None:
                 continue
-            if isinstance(value, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", value):
+            normalized = normalize_date(value)
+            if normalized and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", normalized):
                 continue
             failures.append(f"{path}: {key}={value!r}")
     return failures

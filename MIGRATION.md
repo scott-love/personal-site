@@ -124,6 +124,32 @@ See **[MIGRATION_CHECKLIST.md](./MIGRATION_CHECKLIST.md)** for detailed step-by-
   - Added `layouts.wowchemy-backup/` snapshot directory as rollback anchor for this migration step.
   - Since there were no local layout overrides to migrate, no template file deletions or path rewrites were required in this repository.
 
+### Migration Tracking Notes (Issue 10 / TASK-9: Content front matter → HugoBlox)
+- Content inventory before migration:
+  - 91 Markdown content files under `content/`
+  - 54 publication bundles, 4 project bundles, 6 post pages, 4 root pages, 2 author profiles, and 19 legacy `content/*/home/*.md` widget files
+- Backup / rollback:
+  - Original content is preserved in `content.wowchemy-backup/`
+  - Migration is automated by `scripts/migrate_content_frontmatter.py`
+- Front matter mapping applied:
+  - `widget`/`headless`/`weight` home sections → `content/en/_index.md` and `content/fr/_index.md` landing pages with HugoBlox `sections`
+  - legacy `featured` / `pages` / `portfolio` widgets → `collection` blocks
+  - legacy `experience` widget → `resume-experience` block with inline `items`
+  - legacy `contact` / `tag_cloud` widgets → simple HugoBlox `markdown` blocks
+  - publication `publication_types: ["2"]` → `["article-journal"]`
+  - publication `publication_types: ["6"]` → `["chapter"]`
+  - flat `publication` + `publication_short` → structured `publication.name` + `publication.short_name`
+  - top-level `doi` → `hugoblox.ids.doi`
+  - `external_link` / `url_*` fields → typed `links`
+  - legacy numeric list `view` values → HugoBlox string views (`article-grid`, `citation`)
+  - content dates normalized to ISO 8601 UTC (`YYYY-MM-DDTHH:MM:SSZ`)
+- Post-migration content structure:
+  - 72 migrated content files remain under `content/` plus 2 new landing pages (`content/en/_index.md`, `content/fr/_index.md`)
+  - legacy `content/en/home/` and `content/fr/home/` widget files were removed from active content after their data was folded into the landing pages
+- Validation:
+  - `python scripts/migrate_content_frontmatter.py --root . --check` passes
+  - direct runner build validation is currently blocked in this environment because `hugo` is not installed (`hugo: command not found`), so `hugo --verbose` / `hugo server` still need to be rerun in a Hugo-enabled environment for final visual verification
+
 ---
 
 ## Phase 1: Data Pipeline Discovery
