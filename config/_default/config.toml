@@ -45,6 +45,10 @@ disableAliases = true
   home = ["HTML", "RSS", "headers", "redirects"]
   section = ["HTML", "RSS"]
 
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
